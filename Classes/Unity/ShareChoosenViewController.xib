@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ShareChoosenViewController">
+            <connections>
+                <outlet property="firstLabel" destination="kjD-f9-Za6" id="Aod-Tc-shV"/>
+                <outlet property="secondLabel" destination="q8l-ud-ef7" id="iSd-mb-Rvc"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lSY-1H-Eh1">
+                    <rect key="frame" x="0.0" y="609" width="375" height="203"/>
+                    <color key="backgroundColor" red="0.39215686274509803" green="0.39215686274509803" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yi0-ea-auc">
+                    <rect key="frame" x="249.33333333333337" y="678.66666666666663" width="64" height="64"/>
+                    <state key="normal" backgroundImage="wxscenetimeline_20160316_ln.png"/>
+                    <connections>
+                        <action selector="shareToMoments:" destination="-1" eventType="touchDown" id="JGg-gn-BJL"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kRf-dV-H5K">
+                    <rect key="frame" x="61.666666666666657" y="678.66666666666663" width="64" height="64"/>
+                    <state key="normal" backgroundImage="wxscenesession_20160316_ln.png"/>
+                    <connections>
+                        <action selector="shareToFriend:" destination="-1" eventType="touchDown" id="wPO-ww-vrt"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="分享给朋友" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kjD-f9-Za6">
+                    <rect key="frame" x="50.333333333333343" y="742.66666666666663" width="87" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="分享到朋友圈" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q8l-ud-ef7">
+                    <rect key="frame" x="229.33333333333337" y="742.66666666666663" width="104" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="lSY-1H-Eh1" secondAttribute="trailing" id="0vX-wY-pfu"/>
+                <constraint firstItem="lSY-1H-Eh1" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.25" id="1H4-oe-POh"/>
+                <constraint firstItem="kjD-f9-Za6" firstAttribute="top" secondItem="kRf-dV-H5K" secondAttribute="bottom" id="2Zf-2c-ahF"/>
+                <constraint firstItem="q8l-ud-ef7" firstAttribute="centerX" secondItem="yi0-ea-auc" secondAttribute="centerX" id="DcR-EY-mVb"/>
+                <constraint firstItem="lSY-1H-Eh1" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Lrl-Xe-a8B"/>
+                <constraint firstItem="yi0-ea-auc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" multiplier="1.5" id="XfS-ld-Hcx"/>
+                <constraint firstItem="lSY-1H-Eh1" firstAttribute="centerY" secondItem="kRf-dV-H5K" secondAttribute="centerY" id="bFc-YU-uyg"/>
+                <constraint firstItem="lSY-1H-Eh1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="eNs-a1-zDH"/>
+                <constraint firstItem="lSY-1H-Eh1" firstAttribute="centerY" secondItem="yi0-ea-auc" secondAttribute="centerY" id="hz9-ul-jh3"/>
+                <constraint firstAttribute="bottom" secondItem="lSY-1H-Eh1" secondAttribute="bottom" priority="750" id="o0T-xW-Fh9"/>
+                <constraint firstItem="q8l-ud-ef7" firstAttribute="centerY" secondItem="kjD-f9-Za6" secondAttribute="centerY" id="sa2-le-FCs"/>
+                <constraint firstItem="kjD-f9-Za6" firstAttribute="centerX" secondItem="kRf-dV-H5K" secondAttribute="centerX" id="uNN-vu-vHe"/>
+                <constraint firstItem="kRf-dV-H5K" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" multiplier="0.5" id="vsb-TY-ymy"/>
+            </constraints>
+            <point key="canvasLocation" x="28" y="57"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="wxscenesession_20160316_ln.png" width="64" height="64"/>
+        <image name="wxscenetimeline_20160316_ln.png" width="64" height="64"/>
+    </resources>
+</document>
